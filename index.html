@@ -118,6 +118,41 @@
     .video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
     .caption { margin: 10px 0 0; color: var(--muted); font-size: 14px; }
     .caption a { color: var(--fg); }
+    h3 {
+      font-size: 15px;
+      margin: 28px 0 8px;
+      font-weight: 700;
+    }
+    h3:first-of-type { margin-top: 0; }
+    ul.works { list-style: none; margin: 0; padding: 0; }
+    ul.works li {
+      display: grid;
+      grid-template-columns: 3.2em 1fr auto;
+      gap: 4px 12px;
+      align-items: baseline;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    ul.works .yr { color: var(--muted); font-size: 13px; font-variant-numeric: tabular-nums; }
+    ul.works .t { font-weight: 600; }
+    ul.works .t small { display: block; font-weight: 400; color: var(--muted); font-size: 13px; }
+    ul.works .src { display: flex; gap: 10px; font-size: 13px; }
+    ul.works .src a { color: var(--muted); text-decoration: none; }
+    ul.works .src a:hover, ul.works .src a:focus-visible { color: var(--accent); }
+    @media (max-width: 480px) {
+      ul.works li { grid-template-columns: 3.2em 1fr; }
+      ul.works .src { grid-column: 2; }
+    }
+    details { margin-top: 24px; }
+    summary {
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 15px;
+      padding: 6px 0;
+    }
+    summary:hover { color: var(--accent); }
+    p.note { margin: 16px 0 0; color: var(--muted); font-size: 14px; }
+    p.note a { color: var(--fg); }
     p.body { margin: 0; color: var(--muted); }
     p.body a { color: var(--fg); }
 
@@ -164,6 +199,73 @@
         <iframe src="https://www.youtube-nocookie.com/embed/T961I4mu4T4" title="dusty_dm — RIOKADA" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
       <p class="caption">dusty_dm — original track &amp; music video (Blender × StreamDiffusion). Some samples generated with YuE. <a href="https://note.com/ryok/n/n468e4926078f">Making-of (note, JP)</a></p>
+    </section>
+
+    <section aria-labelledby="works">
+      <h2 id="works">Works</h2>
+
+      <h3>Beats</h3>
+      <ul class="works">
+        <li><span class="yr">2022</span><span class="t">BGP2022</span><span class="src"><a href="https://www.youtube.com/watch?v=28C6Fve5VoQ">YouTube</a></span></li>
+        <li><span class="yr">2021</span><span class="t">THRU<small>KBC2021</small></span><span class="src"><a href="https://soundcloud.com/riokada/thru">SoundCloud</a></span></li>
+        <li><span class="yr">2021</span><span class="t">Moon Soul</span><span class="src"><a href="https://soundcloud.com/riokada/moon-soul">SoundCloud</a><a href="https://www.youtube.com/watch?v=9w3hg8v4s7g">YouTube</a></span></li>
+        <li><span class="yr">2021</span><span class="t">A Rainy Day</span><span class="src"><a href="https://www.youtube.com/watch?v=X62rS0XwtoU">YouTube</a></span></li>
+        <li><span class="yr">2020</span><span class="t">Journey</span><span class="src"><a href="https://soundcloud.com/riokada/beyond">SoundCloud</a><a href="https://www.youtube.com/watch?v=vqOwOPkWgHk">YouTube</a></span></li>
+        <li><span class="yr">2020</span><span class="t">BGPChill</span><span class="src"><a href="https://soundcloud.com/riokada/north-fort">SoundCloud</a></span></li>
+        <li><span class="yr">2020</span><span class="t">Northern Samurai</span><span class="src"><a href="https://www.youtube.com/watch?v=032JsEoa_e4">YouTube</a></span></li>
+        <li><span class="yr">2020</span><span class="t">MIZUIRO</span><span class="src"><a href="https://www.youtube.com/watch?v=2a2er5nfK0k">YouTube</a></span></li>
+        <li><span class="yr">2020</span><span class="t">Ruthless</span><span class="src"><a href="https://www.youtube.com/watch?v=Npb0RJvQeUs">YouTube</a></span></li>
+        <li><span class="yr">2020</span><span class="t">DEFINE</span><span class="src"><a href="https://www.youtube.com/watch?v=SLsWnkc44So">YouTube</a></span></li>
+        <li><span class="yr">2019</span><span class="t">Struggle2Survive</span><span class="src"><a href="https://soundcloud.com/riokada/struggle2survive">SoundCloud</a></span></li>
+        <li><span class="yr">2019</span><span class="t">8Soul<small>BGP2019</small></span><span class="src"><a href="https://soundcloud.com/riokada/ryo-okada-bgp2019">SoundCloud</a></span></li>
+        <li><span class="yr">2019</span><span class="t">A Happy New Year<small>sampling Yumi Arai</small></span><span class="src"><a href="https://soundcloud.com/riokada/inst-hip-hop-arai-yumi-a-happy-new-year-sampling">SoundCloud</a></span></li>
+      </ul>
+
+      <h3>Remixes</h3>
+      <ul class="works">
+        <li><span class="yr">2020</span><span class="t">OZROSAURUS — AREA AREA<small>90s Remix</small></span><span class="src"><a href="https://soundcloud.com/riokada/ozrosaurus-area-area-remix">SoundCloud</a><a href="https://www.youtube.com/watch?v=YEQt0MEIspc">YouTube</a></span></li>
+        <li><span class="yr">2018</span><span class="t">ファンキーグラマラス<small>Rokad Remix</small></span><span class="src"><a href="https://soundcloud.com/riokada/funky-grammarous-rokad-remix">SoundCloud</a><a href="https://www.youtube.com/watch?v=VP4dunR_Ioo">YouTube</a></span></li>
+        <li><span class="yr">2017</span><span class="t">GAGLE — うぶこえ<small>Remix</small></span><span class="src"><a href="https://soundcloud.com/riokada/gagle-remix">SoundCloud</a><a href="https://www.youtube.com/watch?v=W6jGVf4bbu8">YouTube</a></span></li>
+      </ul>
+
+      <h3>DJ Mixes</h3>
+      <ul class="works">
+        <li><span class="yr">2014</span><span class="t">Free Mix</span><span class="src"><a href="https://www.mixcloud.com/riokada/20140330freemix/">Mixcloud</a></span></li>
+        <li><span class="yr">2013</span><span class="t">Japanese Hip-Hop Mix</span><span class="src"><a href="https://soundcloud.com/riokada/mix-japanese-hiphop-mix">SoundCloud</a><a href="https://www.mixcloud.com/riokada/%E6%97%A5%E6%9C%AC%E8%AA%9E/">Mixcloud</a></span></li>
+      </ul>
+
+      <details>
+        <summary>Early beats (2012–2018)</summary>
+        <ul class="works">
+          <li><span class="yr">2018</span><span class="t">Sunset Moment</span><span class="src"><a href="https://soundcloud.com/riokada/hiphop_track_27">SoundCloud</a></span></li>
+          <li><span class="yr">2018</span><span class="t">HipHop_Track_26</span><span class="src"><a href="https://soundcloud.com/riokada/hiphop_demo_track_26">SoundCloud</a></span></li>
+          <li><span class="yr">2018</span><span class="t">HipHop_Demo_Track_25</span><span class="src"><a href="https://soundcloud.com/riokada/hiphop_demo_track_25">SoundCloud</a></span></li>
+          <li><span class="yr">2018</span><span class="t">HipHop_Demo_Track_24</span><span class="src"><a href="https://soundcloud.com/riokada/hiphop_demo_track_24">SoundCloud</a></span></li>
+          <li><span class="yr">2018</span><span class="t">HipHop_Demo_Track_23</span><span class="src"><a href="https://soundcloud.com/riokada/hiphop_demo_track_23">SoundCloud</a></span></li>
+          <li><span class="yr">2018</span><span class="t">Rough Beat (HaruNoUmi)</span><span class="src"><a href="https://soundcloud.com/riokada/rough-beatharunoumi">SoundCloud</a></span></li>
+          <li><span class="yr">2017</span><span class="t">HipHop_Demo_Track_22</span><span class="src"><a href="https://soundcloud.com/riokada/hiphop_demo_track_22">SoundCloud</a></span></li>
+          <li><span class="yr">2017</span><span class="t">HipHop_Demo_Track_21</span><span class="src"><a href="https://soundcloud.com/riokada/hiphop_demo_track_21-1">SoundCloud</a></span></li>
+          <li><span class="yr">2017</span><span class="t">HipHop_Demo_Track_20</span><span class="src"><a href="https://soundcloud.com/riokada/hiphop_demo_track_20">SoundCloud</a></span></li>
+          <li><span class="yr">2017</span><span class="t">BGP CLASH 2019</span><span class="src"><a href="https://soundcloud.com/riokada/hiphop_demo_track_18re-edit">SoundCloud</a></span></li>
+          <li><span class="yr">2017</span><span class="t">HipHop_Demo_Track_18</span><span class="src"><a href="https://soundcloud.com/riokada/hiphop_demo_track_18">SoundCloud</a></span></li>
+          <li><span class="yr">2017</span><span class="t">HipHop_Demo_Track_17</span><span class="src"><a href="https://soundcloud.com/riokada/hiphopinst_17">SoundCloud</a></span></li>
+          <li><span class="yr">2016</span><span class="t">HipHop_Demo_Track_15</span><span class="src"><a href="https://soundcloud.com/riokada/hiphopinst_20161225">SoundCloud</a></span></li>
+          <li><span class="yr">2015</span><span class="t">BGP_RB2015</span><span class="src"><a href="https://soundcloud.com/riokada/akadroy-bgp2015">SoundCloud</a></span></li>
+          <li><span class="yr">2013</span><span class="t">TRACK_006</span><span class="src"><a href="https://soundcloud.com/riokada/track_006">SoundCloud</a></span></li>
+          <li><span class="yr">2012</span><span class="t">rain</span><span class="src"><a href="https://soundcloud.com/riokada/20120212_demo">SoundCloud</a></span></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>AI visual experiments (2021–2022)</summary>
+        <ul class="works">
+          <li><span class="yr">2022</span><span class="t">StyleGAN3 VJ Example</span><span class="src"><a href="https://www.youtube.com/watch?v=oVP4AxhGXDo">YouTube</a></span></li>
+          <li><span class="yr">2021</span><span class="t">Generated Music Video using Deep Learning</span><span class="src"><a href="https://www.youtube.com/watch?v=1Kqby-zheeE">YouTube</a></span></li>
+          <li><span class="yr">2021</span><span class="t">Daft Punk — One More Time<small>StyleGAN-generated video (Ukiyo-e)</small></span><span class="src"><a href="https://www.youtube.com/watch?v=El061Up1nB4">YouTube</a></span></li>
+          <li><span class="yr">2021</span><span class="t">Stardust — Music Sounds Better With You<small>StyleGAN-generated video (Ukiyo-e)</small></span><span class="src"><a href="https://www.youtube.com/watch?v=qSd54ZKA0jg">YouTube</a></span></li>
+        </ul>
+      </details>
+      <p class="note">More on <a href="https://soundcloud.com/riokada">SoundCloud</a> and <a href="https://www.youtube.com/@riokada">YouTube</a>.</p>
     </section>
 
     <section aria-labelledby="about">
