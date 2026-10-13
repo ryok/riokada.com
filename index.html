@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RIOKADA</title>
+  <meta name="description" content="RIOKADA — DJ / Beatmaker / AV works. Tokyo, Japan.">
+  <link rel="canonical" href="https://riokada.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://riokada.com/">
+  <meta property="og:title" content="RIOKADA">
+  <meta property="og:description" content="DJ / Beatmaker / AV works — Tokyo, Japan.">
+  <meta property="og:image" content="https://riokada.com/assets/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@riokadamusic">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <meta name="theme-color" content="#08080c">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MusicGroup",
+    "name": "RIOKADA",
+    "url": "https://riokada.com/",
+    "image": "https://riokada.com/assets/icon-512.jpg",
+    "genre": ["Hip-Hop", "Instrumental", "Experimental"],
+    "foundingLocation": "Tokyo, Japan",
+    "sameAs": [
+      "https://www.youtube.com/@riokada",
+      "https://soundcloud.com/riokada",
+      "https://riokada.bandcamp.com",
+      "https://www.instagram.com/riokadamusic/",
+      "https://x.com/riokadamusic",
+      "https://www.tiktok.com/@riokadamusic",
+      "https://bsky.app/profile/riokada.com",
+      "https://www.mixcloud.com/riokada/"
+    ]
+  }
+  </script>
+  <style>
+    :root {
+      --bg: #08080c;
+      --fg: #f2f2f4;
+      --muted: #9aa0ad;
+      --line: rgba(255, 255, 255, 0.12);
+      --card: rgba(255, 255, 255, 0.04);
+      --accent: #36c9e6;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans", sans-serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 0 16px; }
+
+    header { padding: 56px 0 24px; text-align: center; }
+    .visual {
+      width: min(360px, 78vw);
+      aspect-ratio: 1;
+      margin: 0 auto;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 0 80px rgba(54, 201, 230, 0.25);
+    }
+    .visual video { width: 100%; height: 100%; object-fit: cover; display: block; }
+    h1 {
+      margin: 32px 0 4px;
+      font-size: clamp(40px, 11vw, 72px);
+      letter-spacing: 0.08em;
+      font-weight: 800;
+    }
+    .tagline { margin: 0; color: var(--muted); letter-spacing: 0.04em; }
+
+    nav.links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 10px;
+      margin: 36px 0 8px;
+    }
+    nav.links a {
+      display: block;
+      padding: 14px 16px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: var(--card);
+      text-decoration: none;
+      text-align: center;
+      font-weight: 600;
+      transition: border-color .15s, background .15s;
+    }
+    nav.links a:hover, nav.links a:focus-visible {
+      border-color: var(--accent);
+      background: rgba(54, 201, 230, 0.08);
+      outline: none;
+    }
+
+    section { padding: 40px 0 8px; }
+    h2 {
+      font-size: 13px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 0 0 16px;
+    }
+    .video {
+      position: relative;
+      aspect-ratio: 16 / 9;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: #000;
+    }
+    .video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+    .caption { margin: 10px 0 0; color: var(--muted); font-size: 14px; }
+    .caption a { color: var(--fg); }
+    p.body { margin: 0; color: var(--muted); }
+    p.body a { color: var(--fg); }
+
+    footer {
+      margin-top: 56px;
+      padding: 24px 0 40px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+      text-align: center;
+    }
+    footer a { color: var(--fg); }
+
+    @media (prefers-reduced-motion: reduce) {
+      .visual video { display: none; }
+      .visual { background: url("/assets/riokada.jpg") center / cover; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="visual">
+        <video src="/assets/loop.mp4" poster="/assets/riokada.jpg" autoplay muted loop playsinline aria-label="Audio-reactive AI visual by RIOKADA"></video>
+      </div>
+      <h1>RIOKADA</h1>
+      <p class="tagline">DJ / Beatmaker / AV works — Tokyo, Japan.</p>
+    </header>
+
+    <nav class="links" aria-label="Listen and follow">
+      <a href="https://www.youtube.com/@riokada">YouTube</a>
+      <a href="https://soundcloud.com/riokada">SoundCloud</a>
+      <a href="https://riokada.bandcamp.com">Bandcamp</a>
+      <a href="https://www.instagram.com/riokadamusic/">Instagram</a>
+      <a href="https://x.com/riokadamusic">X</a>
+      <a href="https://www.tiktok.com/@riokadamusic">TikTok</a>
+      <a href="https://bsky.app/profile/riokada.com">Bluesky</a>
+      <a href="https://www.mixcloud.com/riokada/">Mixcloud</a>
+    </nav>
+
+    <section aria-labelledby="featured">
+      <h2 id="featured">Featured</h2>
+      <div class="video">
+        <iframe src="https://www.youtube-nocookie.com/embed/T961I4mu4T4" title="dusty_dm — RIOKADA" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <p class="caption">dusty_dm — original track &amp; music video (Blender × StreamDiffusion). Some samples generated with YuE. <a href="https://note.com/ryok/n/n468e4926078f">Making-of (note, JP)</a></p>
+    </section>
+
+    <section aria-labelledby="about">
+      <h2 id="about">About</h2>
+      <p class="body">Tokyo-based beatmaker and DJ. Rooted in hip-hop, RIOKADA has been making beats since 2017 and creates audio-visual works that combine music with real-time AI visuals. Formerly known as Rokad / KDAR — <a href="https://rokadhack.tumblr.com/">archive (2013–2021)</a>.</p>
+    </section>
+
+    <section aria-labelledby="contact">
+      <h2 id="contact">Contact</h2>
+      <p class="body">Bookings and collaborations: send a DM on <a href="https://www.instagram.com/riokadamusic/">Instagram</a> or <a href="https://x.com/riokadamusic">X</a>.</p>
+    </section>
+
+    <footer>
+      Engineering portfolio (Ryo Okada) → <a href="https://ryok.github.io/portfolio/">ryok.github.io/portfolio</a>
+    </footer>
+  </div>
+</body>
+</html>
